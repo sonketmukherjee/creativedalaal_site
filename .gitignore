@@ -1,0 +1,17 @@
+# Local tooling / IDE
+.claude/
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment / secrets (never commit these)
+.env
+.env.*
+*.key
+*.pem
+
+# Deploy artifacts
+*.zip
