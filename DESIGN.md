@@ -4,8 +4,8 @@ The visual language for creativedalaal.com. All tokens live in `css/style.css` u
 `:root` — change them there and the whole site follows.
 
 ## Brand idea
-**"The broker of creativity, tech & business results."** *Dalaal* = dealer/broker. The site plays the
-confident dealmaker / growth-partner role: editorial, a little cheeky, but the proof is rigorous
+**"Creativity, tech & business results. One engagement."** *Dalaal* = the one who makes the deal happen. The site plays the
+growth-partner role: editorial, a little cheeky, but the proof is rigorous
 (real case files, real custom-build detail — APIs, custom backends, web apps). Tech sits as a third
 pillar alongside creativity and business, never instead of client servicing. Sign-off line:
 *"Source creativity, easily."*
