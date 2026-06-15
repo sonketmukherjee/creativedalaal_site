@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+  CREATIVE DALAAL — Journal (blog) index
+  A featured post + a list of recent posts. Each row links to /blog/<slug>/.
+  To add a post: duplicate /blog/_template (the client-servicing post) folder,
+  rename it, edit the copy, and add a .post-row here.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal — Creative Dalaal</title>
+  <meta name="description" content="Notes on client servicing, building websites that work, and running a creative business — by Sonket Mukherjee (Creative Dalaal)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (shared) -->
+  <nav class="nav" id="nav">
+    <a class="nav__brand" href="/" aria-label="Creative Dalaal home"><img class="nav__logo" src="/assets/CDlogoNav.png" alt="Creative Dalaal" /></a>
+    <div class="nav__links" id="navLinks">
+      <a href="/#work">Work</a><a href="/#services">What I Do</a><a href="/about">About</a><a href="/blog">Journal</a>
+      <a class="btn btn--accent nav__cta" href="/contact">Let's talk</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="case-hero">
+    <div class="container">
+      <a class="case-back" href="/"><span class="arrow">←</span> Home</a>
+      <div class="reveal">
+        <span class="eyebrow">The Journal</span>
+        <h1 class="case-hero__client">Notes from the desk.</h1>
+        <p class="case-hero__outcome">
+          Honest takes on <strong>client servicing</strong>, building websites that actually earn their keep,
+          and running a creative business without losing the plot.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURED POST -->
+  <section class="section" style="padding-top: clamp(2rem,4vw,3rem);">
+    <div class="container">
+      <a class="post-feature reveal" href="/blog/client-servicing-is-the-product">
+        <div class="post-feature__media">Featured image</div>
+        <div class="post-feature__body">
+          <div class="post-meta"><span class="tag">Client servicing</span><span class="sep"></span><span>15 Jun 2026</span><span class="sep"></span><span>6 min read</span></div>
+          <h2 class="post-feature__title">Client servicing is the product</h2>
+          <p class="post-feature__excerpt">
+            Everyone sells deliverables. The agencies and freelancers who last sell something else —
+            the feeling that someone has it handled. Here's what that actually looks like in practice.
+          </p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST LIST -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title reveal">More writing.</h2>
+      </div>
+
+      <div class="post-list">
+        <a class="post-row reveal" href="/blog/client-servicing-is-the-product">
+          <div>
+            <div class="post-meta"><span class="tag">Client servicing</span><span class="sep"></span><span>6 min read</span></div>
+            <h3 class="post-row__title">Client servicing is the product</h3>
+            <p class="post-row__excerpt">Why the relationship — not the deliverable — is the thing clients actually buy.</p>
+          </div>
+          <span class="post-row__arrow">↗</span>
+        </a>
+
+        <!-- Placeholder upcoming posts — duplicate the template to publish these -->
+        <a class="post-row reveal" href="/blog/website-as-a-tool">
+          <div>
+            <div class="post-meta"><span class="tag">WordPress</span><span class="sep"></span><span>5 min read</span></div>
+            <h3 class="post-row__title">When a website should be a tool, not a brochure</h3>
+            <p class="post-row__excerpt">The features that turn a pretty site into something that runs part of the business.</p>
+          </div>
+          <span class="post-row__arrow">↗</span>
+        </a>
+
+        <a class="post-row reveal" href="/blog/taking-over-stalled-builds">
+          <div>
+            <div class="post-meta"><span class="tag">Rescue projects</span><span class="sep"></span><span>6 min read</span></div>
+            <h3 class="post-row__title">How to take over a stalled build without the drama</h3>
+            <p class="post-row__excerpt">Stepping into someone else's half-finished project — and earning the client's trust fast.</p>
+          </div>
+          <span class="post-row__arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (shared) -->
+  <footer class="footer"><div class="container">
+    <div class="footer__grid">
+      <div><p class="footer__big reveal">Source creativity, easily.</p></div>
+      <div class="footer__col"><h4>Explore</h4><a href="/#work">Work</a><a href="/#services">What I do</a><a href="/about">About</a><a href="/careers">Careers</a><a href="/blog">Journal</a></div>
+      <div class="footer__col"><h4><a href="/contact">Contact</a></h4><a href="mailto:sonket@creativedalaal.com">sonket@creativedalaal.com</a><a href="https://wa.me/918981820037">WhatsApp +91 89818 20037</a><a href="https://creativedalaal.com">creativedalaal.com</a></div>
+    </div>
+    <div class="footer__bottom"><span>© <span id="year"></span> Alludere Media (OPC) Private Limited · operating as Creative Dalaal</span><span>Designed &amp; built by Sonket Mukherjee</span></div>
+  </div></footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

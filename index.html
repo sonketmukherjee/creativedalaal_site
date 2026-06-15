@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--
+  CREATIVE DALAAL — Homepage
+  Personal portfolio + blog for Sonket Mukherjee (Creative Dalaal).
+  Static HTML/CSS/JS, built to deploy on Hostinger with no build step.
+  Sections: nav · hero · marquee band · stats · selected work · services ·
+            approach · three-audience CTA · footer.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Dalaal — Sonket Mukherjee · Growth Partner & Client-Servicing Lead</title>
+  <meta name="description" content="Sonket Mukherjee (Creative Dalaal) is the growth partner who makes the whole engagement work — relentless client servicing, clear scoping, and delivery that turns brands into outcomes. Websites and digital are how it gets done." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Creative Dalaal — Sonket Mukherjee" />
+  <meta property="og:description" content="The growth partner clients keep for years. Client servicing is the edge; results are the proof." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: Fraunces (expressive display serif) + Inter Tight (UI sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="nav" id="nav">
+    <a class="nav__brand" href="/" aria-label="Creative Dalaal home"><img class="nav__logo" src="/assets/CDlogoNav.png" alt="Creative Dalaal" /></a>
+    <div class="nav__links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#services">What I Do</a>
+      <a href="/about">About</a>
+      <a href="/blog">Journal</a>
+      <a class="btn btn--accent nav__cta" href="/contact">Let's talk</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="hero">
+    <div class="hero__blob" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__tag reveal">
+        <span class="eyebrow">Sonket Mukherjee</span>
+      </div>
+
+      <!-- Animated multi-line headline; spans slide up on load -->
+      <h1 class="hero__headline">
+        <span class="line"><span>The broker of</span></span>
+        <span class="line"><span><em class="accent-word">creativity</em> &amp;</span></span>
+        <span class="line"><span>business results.</span></span>
+      </h1>
+
+      <div class="hero__meta">
+        <p class="hero__lead reveal" data-delay="2">
+          I'm the partner who makes the whole engagement <strong>work</strong> — sharp scoping,
+          relentless <strong>client servicing</strong>, and delivery that turns a brand into
+          business outcomes. The websites and digital builds are simply how I get you there.
+        </p>
+        <div class="hero__actions reveal" data-delay="3">
+          <a class="btn btn--primary" href="#contact">Start a conversation <span class="arrow">→</span></a>
+          <a class="btn btn--ghost" href="#work">See the proof</a>
+        </div>
+      </div>
+
+      <div class="hero__pills reveal" data-delay="4">
+        <span class="pill pill--live"><span class="blink"></span> Open to clients, vendor &amp; full-time roles</span>
+        <span class="pill">Client servicing &amp; account leadership</span>
+        <span class="pill">Brand, web &amp; campaigns</span>
+        <span class="pill">Decade of agency delivery</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== MARQUEE BAND ===================== -->
+  <!-- JS duplicates the track so the loop is seamless -->
+  <section class="band marquee" aria-hidden="true">
+    <div class="marquee__track" id="marquee">
+      <span class="marquee__item">Client servicing first</span>
+      <span class="marquee__item">Growth partner</span>
+      <span class="marquee__item">Brands into outcomes</span>
+      <span class="marquee__item">Relationships, not projects</span>
+      <span class="marquee__item">Delivered, on time</span>
+      <span class="marquee__item">Trusted for years</span>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat">
+          <div class="stat__num">10<span class="unit">+</span></div>
+          <div class="stat__label">Years across creative &amp; marketing agencies</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">40<span class="unit">+</span></div>
+          <div class="stat__label">Brands served — small, mid-market &amp; enterprise</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">4<span class="unit">yr+</span></div>
+          <div class="stat__label">Longest client relationship, still going</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">60<span class="unit">+</span></div>
+          <div class="stat__label">Creators in the network I orchestrate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SELECTED WORK ===================== -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title reveal">Work that <span class="accent-word">worked</span>.</h2>
+        <p class="section__note reveal" data-delay="1">
+          Proof, not promises. Each case file is a brand I personally owned end to end — what the
+          business needed, the call I made, and the result it drove. The build is where it landed.
+        </p>
+      </div>
+
+      <div class="work-grid">
+
+        <!-- Feature card: the flagship project -->
+        <article class="card card--feature reveal">
+          <div class="card__top">
+            <span class="card__tag">Elementor · Live API · 4 yrs &amp; counting</span>
+            <span class="card__idx">01</span>
+          </div>
+          <h3 class="card__title">Geiger UK</h3>
+          <p class="card__desc">
+            Stepped in where other developers couldn't, to ship a high-fidelity agency design across
+            a 60+ page Elementor build. Engineered a live API integration that surfaces the client's
+            real-time carbon-offset impact, plus a custom backend that cleanly separates design from
+            content so the team updates copy and images effortlessly.
+          </p>
+          <div>
+            <div class="card__meta">
+              <span class="chip">60+ pages</span>
+              <span class="chip">Custom-triggered popups</span>
+              <span class="chip">Real-time carbon API</span>
+              <span class="chip">Design/content separation</span>
+            </div>
+            <a class="card__link" href="/work/geiger-uk">Read the case file <span class="arrow">→</span></a>
+          </div>
+        </article>
+
+        <!-- CA Beyond Practice -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__tag">Content engine · SEO</span>
+            <span class="card__idx">02</span>
+          </div>
+          <h3 class="card__title">CA Beyond Practice</h3>
+          <p class="card__desc">
+            Turned a YouTube channel into a searchable content library — episodes as SEO-optimised
+            blogposts, an interactive mouse-reactive hero, and reel carousels that make a website feel
+            like a streaming shelf.
+          </p>
+          <a class="card__link" href="/work/ca-beyond-practice">Read the case file <span class="arrow">→</span></a>
+        </article>
+
+        <!-- Rohan Trips -->
+        <article class="card reveal" data-delay="1">
+          <div class="card__top">
+            <span class="card__tag">B2B tool · WhatsApp</span>
+            <span class="card__idx">03</span>
+          </div>
+          <h3 class="card__title">Rohan Trips</h3>
+          <p class="card__desc">
+            A B2B trip planner (NX Group, Kolkata) that turns user input into a structured WhatsApp
+            brief for admin — with a Destinations × Activities model that made limited inventory feel
+            deep and explorable.
+          </p>
+          <a class="card__link" href="/work/rohan-trips">Read the case file <span class="arrow">→</span></a>
+        </article>
+
+        <!-- Marketing Hub -->
+        <article class="card reveal">
+          <div class="card__top">
+            <span class="card__tag">Custom app</span>
+            <span class="card__idx">04</span>
+          </div>
+          <h3 class="card__title">Marketing Hub</h3>
+          <p class="card__desc">
+            A live, admin-controlled file &amp; folder directory built as a safer alternative to sharing
+            a Drive — users explore, search, preview and download folders as a zip, no account needed.
+          </p>
+          <a class="card__link" href="/work/marketing-hub">Read the case file <span class="arrow">→</span></a>
+        </article>
+
+        <!-- IT Mind -->
+        <article class="card reveal" data-delay="1">
+          <div class="card__top">
+            <span class="card__tag">Jobs portal</span>
+            <span class="card__idx">05</span>
+          </div>
+          <h3 class="card__title">IT Mind</h3>
+          <p class="card__desc">
+            An HR-consultancy site with an admin-managed job board — filter &amp; sort listings, an
+            application form that accepts resumes and notifies admin for fast vetting.
+          </p>
+          <a class="card__link" href="/work/it-mind">Read the case file <span class="arrow">→</span></a>
+        </article>
+
+      </div>
+
+      <div style="margin-top:2.5rem;" class="reveal">
+        <a class="btn btn--ghost" href="/work">View all projects <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES / WHAT I DO ===================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title reveal">How I make it <span class="accent-word">work</span>.</h2>
+        <p class="section__note reveal" data-delay="1">
+          Client servicing is the product. Everything else — strategy, web, brand, campaigns — is
+          delivered through me and my network so you get one accountable partner, not a scramble of vendors.
+        </p>
+      </div>
+
+      <div class="services">
+        <div class="service reveal">
+          <div class="service__no">01</div>
+          <h3 class="service__title">Client Servicing &amp; Account Leadership</h3>
+          <p class="service__text">My edge. Sharp scoping, honest expectation-setting, and a calm hand from brief to launch — the reason clients stay for years, not projects.</p>
+        </div>
+        <div class="service reveal" data-delay="1">
+          <div class="service__no">02</div>
+          <h3 class="service__title">Growth Strategy &amp; Direction</h3>
+          <p class="service__text">I start from the business outcome — leads, revenue, retention — and work backwards to the plan, the channels and the deliverables that actually move it.</p>
+        </div>
+        <div class="service reveal" data-delay="2">
+          <div class="service__no">03</div>
+          <h3 class="service__title">Web &amp; Digital Delivery</h3>
+          <p class="service__text">Where most of my proof lives: WordPress, Elementor, WooCommerce, Shopify and custom features — built conversion-first and easy for your team to run.</p>
+        </div>
+        <div class="service reveal">
+          <div class="service__no">04</div>
+          <h3 class="service__title">Brand, Social &amp; Campaigns</h3>
+          <p class="service__text">Delivered with my 60+ creator network — storytelling, influencer collabs, social management and brand films, orchestrated end to end.</p>
+        </div>
+        <div class="service reveal" data-delay="1">
+          <div class="service__no">05</div>
+          <h3 class="service__title">One Accountable Partner</h3>
+          <p class="service__text">You brief one person and I broker the right specialists for the job — no managing five vendors, no dropped balls between them.</p>
+        </div>
+        <div class="service reveal" data-delay="2">
+          <div class="service__no">06</div>
+          <h3 class="service__title">Long-Term Stewardship</h3>
+          <p class="service__text">I don't ship and disappear. Some clients I've supported and consulted for over four years — the work grows with the business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== APPROACH ===================== -->
+  <section class="section" id="approach">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title reveal">A calm, proven <span class="accent-word">process</span>.</h2>
+        <p class="section__note reveal" data-delay="1">
+          No drama, no mystery. Here's how a project moves from a vague brief to a website the team is proud to run.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__no">01</div>
+          <div>
+            <h3 class="step__title">Discovery &amp; brief</h3>
+            <p class="step__text">Goals, brand, audience and competitors — scoped properly so there are no surprises later. This is where client servicing earns its keep.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">02</div>
+          <div>
+            <h3 class="step__title">Design &amp; sign-off</h3>
+            <p class="step__text">Key page mockups aligned to the brand, reviewed together until we're confident — then we build with intent, not guesswork.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">03</div>
+          <div>
+            <h3 class="step__title">Deliver &amp; orchestrate</h3>
+            <p class="step__text">I build what I build best and broker the right specialists for the rest — web, brand, campaigns — so you stay close to one accountable partner throughout.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step__no">04</div>
+          <div>
+            <h3 class="step__title">Launch &amp; long-term stewardship</h3>
+            <p class="step__text">Go-live, team handover, and a relationship that often lasts years — I stay invested in the outcome, not just the deliverable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA (three audiences) ===================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta__blob" aria-hidden="true"></div>
+        <div class="cta__inner">
+          <span class="eyebrow" style="color:var(--lime);justify-content:center;">Let's make a deal</span>
+          <h2 class="cta__title">However you want to work together — there's a door for you.</h2>
+          <p class="cta__sub">Whether you need a growth partner, a dependable vendor, or someone to join your team — start here.</p>
+
+          <div class="cta__segments">
+            <div class="segment">
+              <h3 class="segment__h">Need a growth partner</h3>
+              <p class="segment__p">A brand to grow, a project to rescue, or a team that finally delivers. Let's scope the outcome.</p>
+              <a class="segment__link" href="mailto:sonket@creativedalaal.com?subject=Project%20enquiry">Start a conversation →</a>
+            </div>
+            <div class="segment">
+              <h3 class="segment__h">Work as a vendor</h3>
+              <p class="segment__p">Agencies &amp; studios: a dependable delivery partner who owns the client relationship and hits the deadline.</p>
+              <a class="segment__link" href="mailto:sonket@creativedalaal.com?subject=Vendor%20partnership">Partner up →</a>
+            </div>
+            <div class="segment">
+              <h3 class="segment__h">Hire me / the team</h3>
+              <p class="segment__p">Full-time roles or talent looking to join the network — let's have a conversation.</p>
+              <a class="segment__link" href="/careers">See open roles →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__big reveal">Source creativity, easily.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <a href="#work">Work</a>
+          <a href="#services">What I do</a>
+          <a href="/about">About</a>
+          <a href="/careers">Careers</a>
+          <a href="/blog">Journal</a>
+        </div>
+        <div class="footer__col">
+          <h4><a href="/contact">Contact</a></h4>
+          <a href="mailto:sonket@creativedalaal.com">sonket@creativedalaal.com</a>
+          <a href="https://wa.me/918981820037">WhatsApp +91 89818 20037</a>
+          <a href="https://creativedalaal.com">creativedalaal.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Alludere Media (OPC) Private Limited · operating as Creative Dalaal</span>
+        <span>Designed &amp; built by Sonket Mukherjee</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

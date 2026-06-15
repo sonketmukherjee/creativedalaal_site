@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+  CREATIVE DALAAL — Contact
+  A working contact form + direct details + the legal entity (Alludere Media).
+
+  THE FORM uses Web3Forms — no backend / PHP needed, which suits static Hostinger hosting.
+  TO ACTIVATE IT:
+    1. Go to https://web3forms.com, enter sonket@creativedalaal.com, get a free Access Key.
+    2. Paste the key into the value of the hidden "access_key" input below.
+  Submissions then arrive in your inbox. (Until the key is set, the form will error on submit —
+  the mailto links below always work as a fallback.)
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Creative Dalaal · Sonket Mukherjee</title>
+  <meta name="description" content="Start a conversation with Sonket Mukherjee (Creative Dalaal) — for projects, vendor partnerships or hiring. Alludere Media (OPC) Private Limited." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (shared) -->
+  <nav class="nav" id="nav">
+    <a class="nav__brand" href="/" aria-label="Creative Dalaal home"><img class="nav__logo" src="/assets/CDlogoNav.png" alt="Creative Dalaal" /></a>
+    <div class="nav__links" id="navLinks">
+      <a href="/#work">Work</a><a href="/#services">What I Do</a><a href="/about">About</a><a href="/blog">Journal</a>
+      <a class="btn btn--accent nav__cta" href="/contact">Let's talk</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- CONTACT -->
+  <header class="case-hero">
+    <div class="container">
+      <a class="case-back" href="/"><span class="arrow">←</span> Home</a>
+
+      <div class="contact-grid" style="margin-top:1rem;">
+
+        <!-- Left: pitch + direct details -->
+        <div class="contact-aside reveal">
+          <span class="eyebrow">Let's make a deal</span>
+          <h1>Tell me what you're trying to move.</h1>
+          <p>Project, vendor partnership, or a role on the team — the more context you give, the faster I can be useful. I respond within 24 hours.</p>
+
+          <div class="contact-direct">
+            <a href="mailto:sonket@creativedalaal.com"><span class="k">Email</span><span class="v">sonket@creativedalaal.com</span></a>
+            <a href="https://wa.me/918981820037"><span class="k">WhatsApp</span><span class="v">+91 89818 20037</span></a>
+            <a href="https://creativedalaal.com"><span class="k">Web</span><span class="v">creativedalaal.com</span></a>
+            <div>
+              <span class="k">Registered entity</span>
+              <span class="v contact-legal">
+                Alludere Media (OPC) Private Limited<br />
+                7th Floor, Yamuna Apartment<br />
+                86, Golaghata Road, North 24 Paraganas,<br />
+                West Bengal, 700048, India<br />
+                GSTIN: 19ABBCA6022B1Z8
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: the form -->
+        <div class="reveal" data-delay="1">
+          <form class="form" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <!-- TODO: paste your Web3Forms access key here (see comment at top of file) -->
+            <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-ACCESS-KEY" />
+            <input type="hidden" name="subject" value="New enquiry from creativedalaal.com" />
+            <input type="hidden" name="from_name" value="Creative Dalaal website" />
+            <!-- Honeypot field to deflect spam bots (kept off-screen) -->
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <div class="form__row">
+              <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" required /></div>
+              <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required /></div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="reason">I'm here to…</label>
+                <select id="reason" name="I'm here to" required>
+                  <option value="" disabled selected>Choose one</option>
+                  <option>Start a project / hire as a partner</option>
+                  <option>Work with you as a vendor (agency/studio)</option>
+                  <option>Hire you full-time / join the team</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field"><label for="company">Company / brand</label><input type="text" id="company" name="company" /></div>
+            </div>
+
+            <div class="field"><label for="message">What's the project or ask?</label><textarea id="message" name="message" required></textarea></div>
+
+            <button type="submit" class="btn btn--primary">Send it over <span class="arrow">→</span></button>
+            <p class="form__note" id="formNote">I reply within 24 hours.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- FOOTER (shared) -->
+  <footer class="footer" style="margin-top: clamp(3rem,8vw,7rem);"><div class="container">
+    <div class="footer__grid">
+      <div><p class="footer__big reveal">Source creativity, easily.</p></div>
+      <div class="footer__col"><h4>Explore</h4><a href="/#work">Work</a><a href="/#services">What I do</a><a href="/about">About</a><a href="/careers">Careers</a><a href="/blog">Journal</a></div>
+      <div class="footer__col"><h4><a href="/contact">Contact</a></h4><a href="mailto:sonket@creativedalaal.com">sonket@creativedalaal.com</a><a href="https://wa.me/918981820037">WhatsApp +91 89818 20037</a><a href="https://creativedalaal.com">creativedalaal.com</a></div>
+    </div>
+    <div class="footer__bottom"><span>© <span id="year"></span> Alludere Media (OPC) Private Limited · operating as Creative Dalaal</span><span>Designed &amp; built by Sonket Mukherjee</span></div>
+  </div></footer>
+
+  <!-- Form handler: submit via fetch so the user stays on-page and sees a result message -->
+  <script>
+    (function () {
+      var form = document.getElementById("contactForm");
+      var note = document.getElementById("formNote");
+      if (!form) return;
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        note.textContent = "Sending…";
+        try {
+          var res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+          var data = await res.json();
+          if (data.success) {
+            form.reset();
+            note.textContent = "Got it — I'll be in touch within 24 hours.";
+          } else {
+            note.textContent = "Something went wrong. Email me directly at sonket@creativedalaal.com.";
+          }
+        } catch (err) {
+          note.textContent = "Couldn't send right now. Email me directly at sonket@creativedalaal.com.";
+        }
+      });
+    })();
+  </script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
