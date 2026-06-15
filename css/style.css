@@ -666,6 +666,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; line-height
 .job__head { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: flex-start; }
 .job__badge { display: inline-flex; align-items: center; gap: .5rem; font-size: .76rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 600; color: var(--accent); }
 .job__badge::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; animation: blink 1.8s infinite; }
+.job__badge--closed { color: var(--ink-soft); }
+.job__badge--closed::before { background: var(--ink-soft); animation: none; }
+.btn[aria-disabled="true"] { opacity: .55; pointer-events: none; cursor: default; }
 .job__title { font-size: clamp(1.8rem, 4vw, 2.8rem); margin: .6rem 0 .5rem; }
 .job__tagline { color: var(--ink-soft); max-width: 48ch; }
 .job .case-meta { margin-top: 2rem; border-color: var(--line); }
